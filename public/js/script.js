@@ -22,7 +22,7 @@
   
   $button.onclick = function(evt) {
     if($name.value == '')
-      alert('No name no talking!');
+      $('.alert').modal('show');
     else {
       $name.disabled = true;
       socket.emit('send', { name: $name.value, message: $message.value });

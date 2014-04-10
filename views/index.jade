@@ -6,6 +6,16 @@ html
     link(rel='stylesheet', href='/css/style.css')
     title= "Talk"
   body
+    div.modal.fade.alert(tabindex="-1",role="dialog",aria-labelledby="mySmallModalLabel",aria-hidden="true")
+      div.modal-dialog.modal-sm
+        div.modal-content
+          div.modal-header
+            button.close(type="button", data-dismiss="modal" aria-hidden="true") &times;
+            h4#alert-label.modal-title= "Warning"
+            <h4 class="" id=""></h4>
+          div.modal-body
+            p= "No name no talking!"
+
     #content
     .controls
       input#name.input.name(type="text", placeholder="name")
@@ -13,5 +23,6 @@ html
       input#send.input.send(type="button", value="send")
     
     script(src="/socket.io/socket.io.js")
+    script(src="//code.jquery.com/jquery-2.1.0.js")
     script(src="/js/bootstrap.js")
     script(src="/js/script.js")
