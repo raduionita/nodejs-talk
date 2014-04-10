@@ -15,12 +15,13 @@ html
             <h4 class="" id=""></h4>
           div.modal-body
             p= "No name no talking!"
-
-    #content
-    .controls
-      input#name.input.name(type="text", placeholder="name")
-      input#message.input.message(type="text", placeholder="say something...")
-      input#send.input.send(type="button", value="send")
+    
+    .container
+      #talkbox
+      form.controls.from-inline(role="form")
+        input#name.form-control.input.name(type="text", placeholder="name")
+        input#send.btn.btn-primary.input.send(type="button", value="send")
+        input#message.form-control.input.message(type="text", placeholder="say something...")
     
     script(src="/socket.io/socket.io.js")
     script(src="//code.jquery.com/jquery-2.1.0.js")

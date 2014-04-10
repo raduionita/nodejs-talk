@@ -1,4 +1,4 @@
-#content { 
+#talkbox { 
   font-family: Arial;
   font-size: 14px;
   width:  495px; 
@@ -10,8 +10,8 @@
   overflow-y: scroll;
 }
 
-.controls { white-space: nowrap; }
+.controls { white-space: nowrap; width: 500px; }
 
 .input.name { width: 100px; }
 .input.message { width: 340px; }
-.input.send    {  }
+.input.send    { float: right; }
