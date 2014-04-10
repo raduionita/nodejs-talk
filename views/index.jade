@@ -1,0 +1,14 @@
+doctype html
+html
+  head 
+    link(rel='stylesheet', href='/css/style.css')
+    title= "Talk"
+  body
+    #content
+    .controls
+      input#name.input.name(type="text", placeholder="name")
+      input#message.input.message(type="text", placeholder="say something...")
+      input#send.input.send(type="button", value="send")
+    
+    script(src="/socket.io/socket.io.js")
+    script(src="/js/script.js")

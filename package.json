@@ -1,0 +1,11 @@
+{
+  "name": "Talk",
+  "version": "0.0.1a",
+  "description": "Talk",
+  "dependencies": {
+      "socket.io": "*",
+      "express": "3.5.1",
+      "jade": "*"
+  },
+  "author": "Radu"
+}

@@ -1,0 +1,17 @@
+#content { 
+  font-family: Arial;
+  font-size: 14px;
+  width:  495px; 
+  height: 300px;
+  margin: 0 0 20px; 
+  padding: 10px;
+  border: 1px solid #999; 
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.controls { white-space: nowrap; }
+
+.input.name { width: 100px; }
+.input.message { width: 340px; }
+.input.send    {  }
